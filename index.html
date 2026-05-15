@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Love you</title>
+<style> 
+  body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #050505;
+    font-family: 'Courier New', Courier, monospace;
+    overflow:  hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : #ff3366;
+  }
+   
+    #terminal {
+       text-align: center;
+       z-index: 10;
+       transition: opasity 1s ease;
+    }
+  
+    .system-text {
+        color: #777;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-size:  42px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
+
+    .btn{
+        background: transparent;
+        border: 2px solid #ff3366;
+        color: #ff3366;
+        padding: 12px 30px;
+        font-size: 16px;
+        font-family: inherit;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: uppercase;
+        box-shadow: 0 0 15px rgba(255, 51, 102, 0.4);
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        background: #ff3366;
+        color: #000;
+        box-shadow: 0 0 25px #ff3366;
+    }
+    
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        transition: opacity 2s ease;
+        pointer-events: none;
+    }
+   </style>
+</head>
+<body>
+         <div id="terminal">
+            <div class="system-text">Initializing heart.PROTOCOL_V2.0...</div>
+            <div class="title">Love You</div>
+            <p style="color: #eee; margin-bottom: 25px;">> One encrypted package found for you.</p>
+            <button class="btn" id="decryptBtn">&#9888; Decrypt Message</button>
+        </div>
+        <canvas id="heartCanvas"></canvas>
+        <script src="script.js"></script>
+</body>
+</html>
